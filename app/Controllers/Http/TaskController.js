@@ -7,7 +7,6 @@ class TaskController {
       .where('project_id', params.projects_id)
       .with('user')
       .fetch()
-
     return tasks
   }
 
